@@ -1,0 +1,25 @@
+---
+name: cmpsc-100-week-08-lab
+break: true
+indent: 4
+---
+
+Week 08 - Lab - The Dealership.ipynb:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    MatchFileFragment --fragment "from PIL import Image, ImageDraw" --count 1 --exact
+    MatchFileFragment --fragment "Image.save(" --count 1 --exact
+    MatchFileFragment --fragment ".polygon(" --count 1
+    MatchFileFragment --fragment ".ellipse(" --count 1
+    MatchFileFragment --fragment ".rectangle(" --count 1
+    
+the_art.png:
+    ConfirmFileExists
+
+reflection.md:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    CountFileWords --count 300
+    CountFileParagraphs --count 6
+
+ExecuteCommand --command "python3 Week_08_-_Lab_-_The_Dealership.py"
