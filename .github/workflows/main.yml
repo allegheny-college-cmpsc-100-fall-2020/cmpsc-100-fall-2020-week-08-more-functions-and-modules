@@ -22,6 +22,7 @@ jobs:
         pip install --upgrade pip
         pip install pipenv
         pip install notebook
+        pip install pillow
         pipenv install --dev --three
         # pipenv run flake8 src
         # pipenv run black --check src
